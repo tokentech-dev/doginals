@@ -20,6 +20,7 @@ NC='\033[0m' # No Color
 while true; do
     while [ $count -lt $max_count ]; do
         echo "Current count: $count"
+        # 12 is nmbr max of trx ?
         node . drc-20 mint "$target_address" "$token_name" 50 12
         remaining=$((max_count - count))
         echo "Counts left: $remaining"
